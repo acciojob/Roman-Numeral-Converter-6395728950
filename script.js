@@ -11,12 +11,14 @@ function convertToRoman(num) {
 
     let roman = "";
 
-    for (const [symbol, value] of obj) {
-        while (num >= value) {
-            roman += symbol;
-            num -= value;
-        }
+  for (const [key, value] of Object.entries(obj)) {
+    let symbol = value[0];
+    let val = value[1];
+    while (num >= val) {
+        roman += symbol;
+        num -= val;
     }
+}
 
     return roman;
 
