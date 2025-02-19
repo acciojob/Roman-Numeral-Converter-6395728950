@@ -7,7 +7,7 @@ function convertToRoman(num) {
       4:['X', 10], 
       5:['V', 5], 
       6:['I', 1]
-    };
+    }
 
     let roman = "";
 
